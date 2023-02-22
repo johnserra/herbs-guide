@@ -8,8 +8,8 @@ class App extends Component {
     super();
 
     this.state = {
-      name: 'John'
-  }
+      name: 'John',
+  };
   
 }
   render() {
@@ -20,7 +20,10 @@ class App extends Component {
           <p>
             Hi {this.state.name}
           </p>
-          <button onClick={}>
+          <button onClick={() => {
+            this.state.name = 'Andrew'
+          console.log(this.state);
+          }}>
             Change Name
           </button>
 
